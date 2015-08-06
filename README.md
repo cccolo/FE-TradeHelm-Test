@@ -29,4 +29,4 @@
 
 * Build & development: Run 'grunt' for building and 'grunt serve' for preview.
 
-* Note:  - Is necessary previously install Node.js, Git, Visual Studio
+* Note:  - Is necessary previously install Node.js, Git, Visual Studio.
