@@ -1,0 +1,36 @@
+
+<table st-table="rowCollection" class="table table-striped">
+		<thead>
+		<tr>
+			<th data-ng-click="order('ContactName')">Contact Name
+				<span class="sortorder" ng-show="orderByParam === 'ContactName'" ng-class="{reverse:reverse}"></span>
+			</th>
+			<th data-ng-click="order('ContactTitle')">Contact Title
+				<span class="sortorder" ng-show="orderByParam === 'ContactTitle'" ng-class="{reverse:reverse}"></span>
+			</th>
+			<th data-ng-click="order('OutletName')">Outlet name
+				<span class="sortorder" ng-show="orderByParam === 'OutletName'" ng-class="{reverse:reverse}"></span>
+			</th>
+			<th data-ng-click="order('ContactProfile')">Contact Profile
+				<span class="sortorder" ng-show="orderByParam === 'ContactProfile'" ng-class="{reverse:reverse}"></span>
+			</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat="row in rowCollection | orderBy : orderByParam:reverse ">
+			<td>{{row.ContactName}}</td>
+			<td>{{row.ContactTitle}}</td>
+			<td>{{row.OutletName}}</td>
+			<td>{{row.ContactProfile}}</td>
+		</tr>
+		</tbody>
+</table>
+
+<pagination
+	direction-links="false" 
+	total-items="totalItems" 
+	ng-model="currentPage" 
+	max-size="maxSize" 
+	items-per-page="maxSize"
+	ng-change="pageChanged()">
+</pagination>
