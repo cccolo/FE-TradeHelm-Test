@@ -5,9 +5,13 @@
 
 # BE - Back-End
 
+* Technologies: Asp.Net 4.5 Web Api 
+
 * Get data from API: http://localhost:{port}/api/Contacts
 
 # FE - Front-End
+
+* Technologies: AngularJs, NodeJs, Grunt, Bower, Html, CSS
 
 * Note:  - Is necessary previously install Node.js, Git
 
