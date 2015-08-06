@@ -3,19 +3,23 @@
 * José Luis Alvarez Maroccolo
 * E-mail: alvarez.maroccolo@hotmail.com
 
-# BE
+# BE - Back-End
 
 * Get data from API: http://localhost:{port}/api/Contacts
 
-# FE 
+# FE - Front-End
 
-## Node Modules
+* Note:  - Is necessary previously install Node.js, Git
+
+* npm install -g grunt-cli bower yo generator-karma generator-angular
+
+* cd C:\FE-TradeHelm-Test
+
+### Node Modules
 Run 'npm install'
 
-## Bower packages
+### Bower packages
 Run 'bower install'
 
-## Build & development
-
+### Build & development
 Run 'grunt' for building and 'grunt serve' for preview.
-
